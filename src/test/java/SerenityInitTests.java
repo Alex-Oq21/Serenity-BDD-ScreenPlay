@@ -1,4 +1,5 @@
 
+import io.cucumber.java.bs.A;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
@@ -12,23 +13,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SerenityRunner.class)
 public class SerenityInitTests {
-    private static final String restApiUrl = "https://reqres.in/api";
+    private static final String apiUrl = "https://reqres.in/api";
 
     @Test
-    public void GetUsers() {
+    public void getUsers(){
         Actor alex = Actor.named("Alex");
-        alex.whoCan(CallAnApi.at(restApiUrl));
-
-        alex.attemptsTo(Get.resource("/users?page=2"));
+        alex.whoCan(CallAnApi.at(apiUrl));
+        alex.attemptsTo( GetUser.frompage(2));
         assertThat(SerenityRest.lastResponse().statusCode()).isEqualTo(200);
-    }
-
-    @Test
-    public void GetFailUsers() {
-        Actor alex = Actor.named("Alex");
-        alex.whoCan(CallAnApi.at(restApiUrl));
-
-        alex.attemptsTo(Get.resource("/users?page=2"));
-        assertThat(SerenityRest.lastResponse().statusCode()).isEqualTo(400);
     }
 }
