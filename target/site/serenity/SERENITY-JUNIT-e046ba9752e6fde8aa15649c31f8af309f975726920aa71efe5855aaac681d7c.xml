@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="SerenityInitTests" skipped="0" tests="2" time="3.92" timestamp="2022-02-24 05:39:36"><testcase classname="SerenityInitTests" name="Get fail users"><failure message="expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure">expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;</failure><system-err>expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;&#13;
+SerenityInitTests.GetFailUsers(SerenityInitTests.java:32)&#13;
+</system-err></testcase><testcase classname="SerenityInitTests" name="Get users"/></testsuite>
