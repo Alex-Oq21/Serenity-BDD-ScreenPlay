@@ -64,7 +64,7 @@ public class SerenityInitTests {
         alex.attemptsTo(registerUser.withIfo(postUserInfo));
 
         alex.should(
-                seeThat("The ststus code is", new ResponseCode(), equalTo(200))
+                seeThat("The status code is", new ResponseCode(), equalTo(200))
         );
     }
 
