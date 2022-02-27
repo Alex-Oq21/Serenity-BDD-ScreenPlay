@@ -1,3 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
 "Serenity init tests","Get fail users","FAILURE","2022-02-24T17:39:36.885-05:00[America/Bogota]","0.0","3.63"
-"Serenity init tests","Get users","SUCCESS","2022-02-25T19:13:01.506-05:00[America/Bogota]","0.0","4.11"
+"Serenity init tests","Register user test","SUCCESS","2022-02-26T20:13:21.17-05:00[America/Bogota]","0.0","4.25"
+"Serenity init tests","Updating user test","SUCCESS","2022-02-26T20:13:25.451-05:00[America/Bogota]","0.0","0.63"
+"Serenity init tests","Get users","SUCCESS","2022-02-26T20:13:26.085-05:00[America/Bogota]","0.0","0.37"

@@ -3,12 +3,28 @@ package models.users;
 public class Datum {
     private Integer id;
     private String email;
-    private String firstName;
-    private String lastName;
+    private String first_Name;
+    private String last_Name;
     private String avatar;
 
     public Integer getId() {
         return id;
+    }
+
+    public String getFirst_Name() {
+        return first_Name;
+    }
+
+    public void setFirst_Name(String first_Name) {
+        this.first_Name = first_Name;
+    }
+
+    public String getLast_Name() {
+        return last_Name;
+    }
+
+    public void setLast_Name(String last_Name) {
+        this.last_Name = last_Name;
     }
 
     public void setId(Integer id) {
@@ -21,22 +37,6 @@ public class Datum {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
     }
 
     public String getAvatar() {
